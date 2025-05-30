@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+   
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i id="heart" class="ri-heart-3-fill"></i>
+                </div>
+
+                <div class="title">
+                    <h4>Now palying</h4>
+                </div>
+                
+                <div class="circle">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </nav>
+
+            <img   id="poster"  src="./assets/images/image 1.webp" alt="music img" class="img">
+
+            <h1 id="song_name">Future Design</h1>
+            <p id="artist">penguinmusic</p>
+
+            <audio src="./audio/audio 1.mp3" id="song">
+                <source type="audio/mp3" />
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div id="backward"> <i class="fa-solid fa-backward"></i></div>
+
+                <div id="play-pause">
+                     <i class="fa-solid fa-play" id="action"></i>
+                </div>
+
+                <div id="forward"> <i class="fa-solid fa-forward"></i></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
